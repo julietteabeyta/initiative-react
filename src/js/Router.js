@@ -8,8 +8,8 @@ import Settings from './Settings';
 const Router = () => (
     <BrowserRouter>
         <Switch>
-            <Route exact path="/" component={App}></Route>
-            <Route path="/home" component={App}></Route>
+            <Route exact path="/" component={App} />
+            <Route path="/home" component={App} />
             <Route path="/charactersheet" component={CharacterSheet} />
             <Route path="/diceroller" component={DiceRoller} />
             <Route path="/settings" component={Settings} />

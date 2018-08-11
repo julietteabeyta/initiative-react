@@ -1,11 +1,15 @@
-import React from 'react';
-import BackButton from './BackButton';
+import React, { Component } from 'react';
+import NavButton from './NavButton';
 
-const CharacterSheet = () => (
-  <div>
-    <BackButton />
-    <h1>Character Sheet</h1>
-  </div>
-);
+class CharacterSheet extends Component {
+  render(){
+    return(
+      <div>
+        <NavButton name="Back" isBack/>
+        <h1>Character Sheet</h1>
+      </div>
+    );
+  }
+}
 
 export default CharacterSheet;

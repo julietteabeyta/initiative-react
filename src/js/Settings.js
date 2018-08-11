@@ -1,11 +1,15 @@
-import React from 'react';
-import BackButton from './BackButton';
+import React, { Component } from 'react';
+import NavButton from './NavButton';
 
-const Settings = () => (
-  <div>
-    <BackButton />
-    <h1>Settings</h1>
-  </div>
-);
+class Settings extends Component {
+  render(){
+    return(
+      <div>
+        <NavButton name="Back" isBack/>
+        <h1>Settings</h1>
+      </div>
+    );
+  }
+}
 
 export default Settings;

@@ -1,11 +1,15 @@
-import React from 'react';
-import BackButton from './BackButton'
+import React, {Component} from 'react';
+import NavButton from './NavButton'
 
-const DiceRoller = () => (
-  <div>
-    <BackButton/>
-    <h1>Dice Roller</h1>
-  </div>
-);
+class DiceRoller extends Component {
+  render() {
+    return(
+      <div>
+        <NavButton name="Back" isBack/>
+        <h1>Dice Roller</h1>
+      </div>
+    );
+  }
+}
 
 export default DiceRoller;
